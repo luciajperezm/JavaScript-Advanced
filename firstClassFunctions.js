@@ -35,5 +35,33 @@ console.log(arrayCalc(years, calculateAge));
 
 //now we have a function that accepts functions as input
 
+//But, what about functions thar return functions??
 
+/*let's create a function that creates different interview questions for different jobs
+1. for each job we will returna function that builds a string using the person's name as an input
+*/
+function interviewQuestion(job) {
+    if (job === 'designer') {
+        //returns another function
+        return function(name) {
+            console.log(name + ', can you please explain what UX design id?');
+        }
+    }else if(job === 'teacher') {
+        return function(name) {
+            console.log('What subject do you teach, ' + name + '?');
+        }
+    } else {
+        return function(name){
+            console.log('Hello, What do you do?');
+        }
+    }
+}
 
+/*functions are always first class function in javaScript because they are effectively objects
+so we simply return an object */
+
+//this returns a function and we need a place to store it
+
+var teacherQuestion = interviewQuestion('teacher');
+teacherQuestion('Lucia');
+var designerQuestion = interviewQuestion('designer');

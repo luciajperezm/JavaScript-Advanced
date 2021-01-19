@@ -15,5 +15,8 @@ with the arguments that we pass inside. functionConstructor.js
 This is another popular way to create objects objectCreate.js
 
 ## First class functions
+This functions will only do one simple task, they are known as callback functions. They basically accept another funcion as input.
+This functions can also return functions! check firstClassFunctions.js
 
+## Immediately Invoked Function Expressions (IIFE)
 
