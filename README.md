@@ -29,7 +29,9 @@ only need to invoke the function at the end. We cannot acces the variable from t
 ## Closures
 An inner function always has access to the variables and parameters of its outer function, even after the outer function has returned. --> closures.js
 
-## 
+## Bind, call and apply methods
+This methods allow us to call a function and set the 'this' variable manually
+
 
 
 
